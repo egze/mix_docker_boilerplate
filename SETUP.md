@@ -8,7 +8,7 @@ See `docker/dev/Dockerfile` for current versions of elixir, erlang and alpine an
 
   * `make start` to build and start the container
   * `make shell` to start bash inside the container.
-  * Use `mix` to generate a new project.
+  * Use `mix` to generate a new project. Example `mix new . --app <APP_NAME>`. Select `Y` to overwrite README.md.
   * Start hacking!
 
 ## Common tasks
@@ -35,6 +35,7 @@ make deps_update
 Clean unused dependencies
 ```bash
 make deps_clean
+```
 
 ### IEx console
 
