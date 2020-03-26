@@ -13,7 +13,7 @@ See `docker/dev/Dockerfile` for current versions of elixir, erlang and alpine an
 
 ## Common tasks
 
-You can find many common task definitions in the `Makefile`
+You can find many common task definitions in the `Makefile`. You can either use them, or start bash with `make shell` and use `mix` or other commands.
 
 ### Run tests
 
