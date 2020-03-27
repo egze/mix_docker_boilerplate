@@ -11,8 +11,8 @@ See `docker/dev/Dockerfile` for current versions of elixir, erlang and alpine an
   * Use `mix` to generate a new project. Example `mix new . --app <APP_NAME>`. Select `Y` to overwrite README.md.
   * Add to project config in `mix.exs`:
     ```elixir
-    build_path: System.get_env("BUILD_PATH") || "_build",
-    deps_path: System.get_env("DEPS_PATH") || "deps",
+    build_path: System.get_env("BUILD_PATH", "_build"),
+    deps_path: System.get_env("DEPS_PATH", "deps")
     ```
   * Start hacking!
 
